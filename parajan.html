@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Código</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        #message, #video {
+            display: none;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Introduce el Código</h2>
+    <input type="text" id="codeInput" placeholder="Escribe el código aquí">
+    <button onclick="validateCode()">Enviar</button>
+    
+    <div id="message">
+        <h3>Código correcto</h3>
+        <p>¡Has ingresado el código correcto! Aquí tienes el video:</p>
+    </div>
+
+    <div id="video">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function validateCode() {
+        const code = document.getElementById('codeInput').value;
+        const correctCode = "lacarademaiaia"; // Este es el código que se debe ingresar
+
+        if (code === correctCode) {
+            document.getElementById('hola jan welcome to de moodle comunity').style.display = 'block';
+            document.getElementById('https://youtube.com/shorts/BH7WadzA23E?si=V43TYDJ90Gsj0nbd ').style.display = 'block';
+        } else {
+            alert("Código incorrecto, por favor intenta de nuevo.");
+        }
+    }
+</script>
+
+</body>
+</html>
